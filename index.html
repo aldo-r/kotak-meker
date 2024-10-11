@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="text-center">kotak meker</h1>
+    <div class="flex">
+        <div class="w-1/2 flex-col place-content-center p-7 h-[80vh]">
+            <form class="mb-2" action="">
+                <label for="width">Width</label>
+                <input id="width" class="border-2 border-black" type="number">
+                <label for="height">Height</label>
+                <input id="height" class="border-2 border-black" type="number">
+            </form>
+            <button class="p-3 bg-blue-600 text-white rounded-lg" type="button" onclick="getValues()">Get Values</button>
+        </div>
+        <div class="w-1/2 justify-center items-center flex h-[80vh]">
+            <div id="kotak" class=" shadow-xl border-2 border-black"></div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
